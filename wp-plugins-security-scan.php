@@ -35,7 +35,7 @@ class Wp_Plugins_Security_Scan {
 
     public function add_plugin_settings_link($links) {
         array_unshift($links, '<a href="options-general.php">設定 Token</a>');
-        array_unshift($links, '<a href="plugins.php?page='.WPSS_SLUG.'">檢查外掛</a>');
+        array_unshift($links, '<a href="plugins.php?page='.WPSS_SLUG.'">比對外掛安全性</a>');
         return $links;
     }
 
@@ -54,8 +54,8 @@ class Wp_Plugins_Security_Scan {
     public function add_admin_menu(){
         add_submenu_page(
             'plugins.php',
-            '掃描外掛安全性',
-            '掃描外掛安全性',
+            '比對外掛安全性',
+            '比對外掛安全性',
             'manage_options',
             WPSS_SLUG,
             array( $this, 'plugins_check_page' )
@@ -280,7 +280,3 @@ class Wp_Plugins_Security_Scan {
 
     }
 }
-
-
-
-
