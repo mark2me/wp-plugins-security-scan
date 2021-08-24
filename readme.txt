@@ -1,7 +1,7 @@
 === Plugin Name ===
 Contributors: simon_tw
 Requires at least: 5.0
-Tested up to: 5.6
+Tested up to: 5.8
 Requires PHP: 7.2
 Stable tag: 1.0
 License: GPLv2 or later

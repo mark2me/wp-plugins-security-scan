@@ -35,7 +35,7 @@ class Wp_Plugins_Security_Scan {
 
     public function add_plugin_settings_link($links) {
         array_unshift($links, '<a href="options-general.php">設定 Token</a>');
-        array_unshift($links, '<a href="plugins.php?page='.WPSS_SLUG.'">比對外掛安全性</a>');
+        array_unshift($links, '<a href="plugins.php?page='.WPSS_SLUG.'">開始比對</a>');
         return $links;
     }
 
